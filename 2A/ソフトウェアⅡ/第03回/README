@@ -1,0 +1,24 @@
+Paint Software Ver 1.0
+Copyright (c) 2017, Yuta Ooka. All rights reserved.
+
+Usage: [COMMAND] [OPTION] [ARGUMENTS]
+  help                        Show this help.
+  line x1 y1 x2 y2            Draw a line from (x1, y1) to (x2, y2).
+  rectangle (-f) x1 y1 x2 y2  Draw a rectangle, whose upper-left coordinate is (x1, y1),
+                              and whose lower-right coordinate is (x2, y2).
+                              If you put -f option, the rectangle will be filled.
+  circle (-f) x y r           Draw a circle whose center coordinate is (x, y),
+                              and whose radius is r.
+                              If you put -f option, the circle will be filled.
+  effect c                    Add effect to the canvas with character c.
+  copy x1 y1 x2 y2            Copy an area whose upper-left coordinate is (x1, y1),
+                              and whose lower-right coordinate is (x2, y2) to clipboard.
+  paste x y                   Paste clipboard to the upper-left position of (x, y).
+  undo                        Undo one step you did before.
+  save (filename)             Save the history as a file with specified filename.
+                              If filename is not specified, save it as "history.txt".
+  load (filename)             Load a history file with specified filename.
+                              If filename is not specified, load "history.txt".
+  export (filename)           Create a bitmap file from canvas with specified filename.
+                              If filename is not specified, export it as "canvas.bmp".
+  quit                        Quit this program.
